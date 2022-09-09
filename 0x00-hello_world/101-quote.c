@@ -1,8 +1,8 @@
 #include <unistd.h>
 /**
- * Description: main - Prints the text "and that piece of art is useful - Dora Korpar, 2015-10-19"
+ * Description: main - Prints a text
  *
- * Retuen: Always 1 (Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
