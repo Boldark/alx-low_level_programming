@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * main - Prints a text
+ * Description: main - Prints the text "and that piece of art is useful - Dora Korpar, 2015-10-19"
  *
  * Retuen: Always 1 (Success)
  */
