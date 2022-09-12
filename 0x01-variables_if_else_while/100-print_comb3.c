@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * codes for printing all possible combination of two d/t digits in ascending order and seperated by a comma followed by a space.
+ * codes for printing all possible combination of two d/t digits
+ * in ascending order and seperated by a comma followed by a space.
  *
  * Return: Always 0 (Success)
  */
