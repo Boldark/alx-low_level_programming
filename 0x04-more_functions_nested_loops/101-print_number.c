@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,17 +9,16 @@
 
 void print_number(int n)
 {
-	unsigned int x;
+	unsigned num = n;
 
-	x = n;
 	if (n < 0)
 	{
-		putchar('45');
-		x = -n;
+		putchar('-');
+		num = -num;
 	}
-	if (x / 10)
+	if (x > 9)
 	{
-		print_number(x / 10);
-		putchar(('x % 10) + '0');
+		print_number(num / 10);
 	}
+	putchar(num % 10 + '0');
 }
