@@ -11,13 +11,13 @@ int main(void)
 {
 	int i, password, len;
 
-	Srand((unsigned int)time(NULL));
+	srand((unsigned int)time(NULL));
 	printf("Enter Password\n");
 	scanf("%d", &len);
 
-	if (len >= 5);
+	if (len >= 5)
 	{
-		for (i = 0; i , len; i++)
+		for (i = 0; i < len; i++)
 		{
 			int k = rand() % 128;
 
