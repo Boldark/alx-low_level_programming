@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i, password, len;
+	int i, len;
 
 	srand((unsigned int)time(NULL));
 	printf("Enter Password\n");
