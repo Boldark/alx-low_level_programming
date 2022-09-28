@@ -2,7 +2,7 @@
 
 int check_prime(int, int);
 /**
- * is_prime_number: function that detects a prime number
+ * is_prime_number - function that detects a prime number
  * @n: number
  * Return: integer
  */
