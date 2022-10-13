@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * print_name - function that prints a name
  * @name: name of the person
