@@ -4,7 +4,7 @@
 /**
  * main - program that prints the opcodes of its own main function
  * @argc: number of arguments
- * @argc: arguments containing number of bytes
+ * @argv: arguments containing number of bytes
  * Return: 0 (succes) 1 (error)
  */
 
