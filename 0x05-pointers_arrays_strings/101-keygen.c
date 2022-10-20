@@ -9,29 +9,17 @@
 
 int main(void)
 {
-	int i, len;
+	int pass, sum;
 
-	srand((unsigned int)time(NULL));
-	printf("Enter Password\n");
-	scanf("%d", &len);
-
-	if (len >= 5)
+	srand(time(NULL));
+	sum = 0;
+	while (sum <= 2645)
 	{
-		for (i = 0; i < len; i++)
-		{
-			int k = rand() % 128;
-
-			if ((k >= 48 && k <= 57) || (k >= 65 && k <= 90) || (k >= 97 && k <= 122) || (k >= 35 && k <= 37) || (k == 64))
-			{
-				printf("%d", k);
-			}
-			else
-			{
-				i--;
-			}
-		}
-		printf("\n");
+		pass = (rand() % 128);
+		sum += pass;
+		printf("%c", pass);
 	}
+	printf("%c", 2772 - sum);
 
 	return (0);
 }
