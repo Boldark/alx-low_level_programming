@@ -10,27 +10,28 @@
 
 int main(int argc, char *argv[])
 {
-	int n;
-	char *fn;
+	int count, bytes;
 
 	if (argc != 2)
 	{
-		puts("Error");
-		return (1);
+		printf("Error\n");
+		exit(1);
 	}
-	n = atoi(argv[1]);
-	if (n < 0)
+
+	bytes = atoi(argv[1]);
+	if (bytes < 0)
 	{
-		puts("Error");
-		return (2);
+		printf("Error\n");
+		exit(2);
 	}
-	fn = (char *)main;
-	for (; n > 0; n--, fn++)
+
+	for (count = 0; count < bytes; count++)
 	{
-		printf("%02x", *fn & 0xff);
-		if (n != 1)
-			putchar(' ');
+		printf("%02hhx", *((char *)main + count));
+		if (count  < bytes - 1)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	putchar('\n');
 	return (0);
 }
