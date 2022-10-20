@@ -4,7 +4,7 @@
 /**
  * print_number - prints number
  * @n: number to be printed
- * Return: nothing
+ * Return: void
  */
 
 void print_number(int n)
