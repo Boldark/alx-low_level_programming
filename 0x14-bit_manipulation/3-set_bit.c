@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > 32) /* because size of long int is 32 bits */
 		return (-1);
 
-//First shift left 1 by index bits and then OR/Add it the given number
+/*First shift left 1 by index bits and then OR/Add it the given number*/
 	*n = *n | (1 << index);
 	return (1);
 }
